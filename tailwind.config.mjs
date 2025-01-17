@@ -1,3 +1,4 @@
+// tailwind.config.mjs
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -13,5 +14,6 @@ export default {
       },
     },
   },
+  darkMode: 'class', // تفعيل الوضع الليلي عند إضافة الكلاس "dark"
   plugins: [],
 };
