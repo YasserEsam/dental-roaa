@@ -1,18 +1,6 @@
-// src/app/layout.js
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar";  // استيراد مكون Navbar
-import Footer from "../components/Footer";  // استيراد مكون Footer
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export const metadata = {
   title: "عيادة غمدان",
@@ -22,10 +10,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Navbar />  {/* إضافة مكون Navbar */}
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="font-geist-mono antialiased">
+        <Navbar />
         {children}
-        <Footer />  {/* إضافة مكون Footer */}
+        <Footer />
       </body>
     </html>
   );
