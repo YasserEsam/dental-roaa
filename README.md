@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# عيادة غمدان
 
-## Getting Started
+## وصف المشروع
+**عيادة غمدان** هي واجهة ويب تم تطويرها باستخدام **Next.js** لعرض الخدمات المقدمة من العيادة. تهدف هذه الواجهة إلى تقديم المعلومات المتعلقة بالخدمات الطبية المتوفرة في العيادة بطريقة منظمة وجذابة. العيادة تقدم مجموعة من الخدمات الطبية للأسنان، مثل الفحوصات والعلاجات المتنوعة، ولكن لا تتضمن هذه الواجهة عملية حجز المواعيد أو التعامل مع استفسارات المرضى.
 
-First, run the development server:
+---
+
+## كيفية البدء
+
+### 1. تشغيل الخادم المحلي:
+للبدء في تطوير المشروع، قم بتشغيل الخادم المحلي باستخدام الأمر التالي:
 
 ```bash
 npm run dev
-# or
+# أو
 yarn dev
-# or
+# أو
 pnpm dev
-# or
+# أو
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+بعد تشغيل الخادم، يمكنك فتح المتصفح والذهاب إلى الرابط التالي لرؤية النتيجة:
+[http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 2. التعديل على الصفحة:
+يمكنك البدء بتعديل الصفحة عبر تحرير الملف `app/page.js`. يتم تحديث الصفحة تلقائيًا أثناء تعديل الملف.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## التقنيات المستخدمة
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js**: إطار عمل لبناء تطبيقات React، ويوفر تسريع الأداء باستخدام التقنيات مثل التقديم المسبق للصفحات.
+- **Tailwind CSS**: إطار عمل CSS لتصميم واجهات المستخدم بطريقة مرنة وسهلة.
+- **Framer Motion**: مكتبة لرسوم متحركة سلسة تساهم في تحسين تجربة المستخدم.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## التعلم والمصادر
 
-## Deploy on Vercel
+- [وثائق Next.js](https://nextjs.org/docs) - تعلم المزيد عن ميزات Next.js وواجهته البرمجية.
+- [تعلم Next.js](https://nextjs.org/learn) - دورة تفاعلية لتعلم Next.js خطوة بخطوة.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## نشر المشروع
+
+لأبسط طريقة لنشر تطبيق **Next.js**، يمكنك استخدام [منصة Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
+
+يمكنك أيضًا الاطلاع على [وثائق نشر Next.js](https://nextjs.org/docs/app/building-your-application/deploying) لمزيد من التفاصيل حول كيفية نشر التطبيق.
+
+---
+
+## المساهمات
+
+- مرحب بالمساهمات لتحسين المشروع! يمكنك فتح **Issue** أو إرسال **Pull Request**.
+
+---
+
+### معلومات إضافية عن عيادة غمدان
+
+**عيادة غمدان** هي عيادة أسنان متخصصة تقدم خدمات طبية عالية الجودة في مجال طب الأسنان. تشمل الخدمات التي تقدمها العيادة:
+- فحوصات دورية للأسنان.
+- علاج تسوس الأسنان.
+- تنظيف الأسنان.
+- تركيب الحشوات.
+- تبييض الأسنان.
+
+العيادة تهتم بتوفير بيئة مريحة وآمنة لجميع المرضى، وتستخدم أحدث التقنيات في علاج الأسنان.
+
+---
+
+### ترخيص
+
+[MIT](LICENSE)
+
+---
+
+إذا كان لديك أي استفسار أو ترغب في إضافة معلومات أخرى، يمكنك التواصل معنا عبر GitHub أو وسائل التواصل الأخرى.
+
+---
+
