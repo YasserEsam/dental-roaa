@@ -1,17 +1,21 @@
+// tailwind.config.mjs
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  purge: ['./src/**/*.{js,ts,jsx,tsx}'], // Include all Next.js page files and components
-  darkMode: 'class', // or 'media' or 'false'
+const tailwindConfig = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx}", // تضمين ملفات الصفحات
+    "./src/components/**/*.{js,ts,jsx,tsx}", // تضمين ملفات المكونات
+    "./src/app/**/*.{js,ts,jsx,tsx}", // تضمين ملفات التطبيق
+  ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "var(--background)", // تعريف ألوان متغيرة
+        foreground: "var(--foreground)", // تعريف ألوان متغيرة
       },
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+  darkMode: 'class', // تفعيل الوضع الليلي باستخدام الكلاس
+  plugins: [], // إضافة أي مكونات إضافية لاحقًا
 };
+
+export default tailwindConfig;
