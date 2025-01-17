@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ['./src/**/*.{js,ts,jsx,tsx}'], // Include all Next.js page files and components
-  darkMode: 'class', // or 'media' or 'false'
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/app/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -10,8 +13,8 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {},
-  },
+  darkMode: 'class', // تفعيل الوضع الليلي عند إضافة الكلاس "dark"
   plugins: [],
 };
+
+
